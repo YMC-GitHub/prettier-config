@@ -1,0 +1,32 @@
+{
+  "name": "prettier-config-yemiancheng",
+  "version": "1.0.0",
+  "description": "shareable prettier config",
+  "files": [
+    "package.json",
+    "prettier.config.js"
+  ],
+  "main": "prettier.config.js",
+  "unpkg": "prettier.config.js",
+  "keywords": [
+    "prettier",
+    "config",
+    "yemiancheng",
+    "shareable"  
+  ],
+  "scripts": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ymc-github/prettier-config.git"
+  },
+  "author": "yemiancheng <ymc.github@gmail.com> (https://github.com/ymc-github)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ymc-github/prettier-config/issues"
+  },
+  "homepage": "https://github.com/ymc-github/prettier-config#readme",
+  "dependencies": {},
+  "devDependencies": {
+  }
+}
