@@ -12,21 +12,19 @@
     "prettier",
     "config",
     "yemiancheng",
-    "shareable"  
+    "shareable"
   ],
-  "scripts": {
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ymc-github/prettier-config.git"
   },
-  "author": "yemiancheng <ymc.github@gmail.com> (https://github.com/ymc-github)",
-  "license": "MIT",
   "bugs": {
     "url": "https://github.com/ymc-github/prettier-config/issues"
   },
   "homepage": "https://github.com/ymc-github/prettier-config#readme",
+  "author": "yemiancheng <ymc.github@gmail.com>",
+  "license": "MIT",
   "dependencies": {},
-  "devDependencies": {
-  }
+  "devDependencies": {}
 }
