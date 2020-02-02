@@ -1,0 +1,61 @@
+# 操作系统
+os:
+  - "linux"
+  - "windows"
+  - "osx"
+
+# 编程语言
+language: node_js
+
+# 语言版本
+node_js:
+  - "10"
+  - "8"
+  - "6"
+  - "4"
+  - "0.12"
+  - "0.10"
+
+# 设置脚本
+before_install:
+  - echo "now is in before_install Phase"
+install:
+  - echo "now is in install Phase"
+before_script:
+  - echo "now is in before_script Phase"
+  - git config --global user.name 'yemiancheng-Travis-CI'
+  - git config --global user.email 'ymc-github@gmail.com'
+script:
+  - echo "now is in script Phase"
+after_success:
+  - echo "now is in after_success Phase"
+after_failure:
+  - echo "now is in after_failure Phase"
+before_deploy:
+  - echo "now is in before_deploy Phase"
+deploy:
+  - provider: script
+    skip_cleanup: true
+    script: echo "now is in deploy Phase"
+    on:
+      branch: master
+after_deploy:
+  - echo "now is in after_deploy Phase"
+after_script:
+  - echo "now is in after_script Phase"
+
+# 环境变量
+env:
+  matrix:
+  - PROJECT_VERSION="1.x"
+# 缓存依赖
+cache: npm
+# 使用插件
+addons:
+  ssh_known_hosts:
+  - github.com
+matrix:
+  fast_finish: true
+  allow_failures:
+  #allow failures for linux/win/mac nodejs<=6
+  - node_js: '6'
