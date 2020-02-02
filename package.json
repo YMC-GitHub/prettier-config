@@ -14,7 +14,9 @@
     "yemiancheng",
     "shareable"
   ],
-  "scripts": {},
+  "scripts": {
+    "test": "node prettier.config.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ymc-github/prettier-config.git"
