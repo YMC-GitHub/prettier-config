@@ -27,6 +27,7 @@ before_script:
   - git config --global user.email 'ymc-github@gmail.com'
 script:
   - echo "now is in script Phase"
+  - npm run test
 after_success:
   - echo "now is in after_success Phase"
 after_failure:
