@@ -2,7 +2,7 @@ module.exports = {
   // 行的长度
   printWidth: 80,
   // 缩进符长
-  tabWidth: 4,
+  tabWidth: 2,
   // 缩进类型
   useTabs: false,
   // 句子分号
@@ -24,9 +24,9 @@ module.exports = {
   // 设解析器：设置用什么来格化
   // parser: 'babylon',
   // 需要备注：设置是否开启格化
-  requirePragma: 'false',
+  requirePragma: false,
   // 插入备注：设置是否开启格化
-  insertPragma: 'false',
+  insertPragma: false,
   // 空格敏感
   htmlWhitespaceSensitivity: 'css',
   // 行尾字符
